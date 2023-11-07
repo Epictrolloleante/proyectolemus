@@ -1,0 +1,14 @@
+#container{
+    display: flex;
+    height: 100%;
+    background-color: #393d3f;
+    color: #FFFFFF;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container p{
+    text-align: center;
+}
