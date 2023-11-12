@@ -5,9 +5,14 @@ import ComponenteLayout from './ComponenteLayout';
 import bootstrap from 'bootstrap';
 export default function MenuPrincipal() {
   const [isAuthenticated, setIsAuthenticated] = useState(null); // Usar null para indicar "cargando"
- 
+  const [sidebarItems, setSidebarItems] = useState([
+    {level:'1',type:'activo',link:'/link1',text:'Menu'},
+    {level:'1',type:'inactivo',link:'/link1',text:'item1'},
+    {level:'2',type:'inactivo',link:'/link2',text:'item2'},
+    {level:'1',type:'activo',link:'/link1',text:'Menu'},
+  ]);
 
-
+ console.log(sidebarItems);
   useEffect(() => {
     Auth()
       .then((isAuthenticated) => {
@@ -22,7 +27,7 @@ export default function MenuPrincipal() {
 
   return (
 
-    <ComponenteLayout Titulo="Home">
+    <ComponenteLayout Titulo="Home"  sidebarItems={sidebarItems}>
 
       <div class="Principalprincipal">
 

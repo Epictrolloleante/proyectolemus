@@ -9,7 +9,8 @@ import Footer from './Footer';
 
 function Layout(props) {
   const [isAuthenticated, setIsAuthenticated] = useState(null); // Usar null para indicar "cargando"
-
+  
+  console.log(props.sidebarItems);
   useEffect(() => {
     Auth()
       .then((isAuthenticated) => {
@@ -33,7 +34,7 @@ function Layout(props) {
       <div className="Layoutcontainer">
         {isAuthenticated ? (
           <><div className="Layoutsidebar">
-            <Sidebar id="lateral" />
+            <Sidebar id="lateral"  items={props.sidebarItems}/>
           </div><main className="Layoutmain">{props.children}</main></>
         ) : (
           <>
