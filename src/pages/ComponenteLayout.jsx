@@ -1,20 +1,52 @@
 // Layout.js
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Auth from './Auth';
 import styles from '../css/ComponenteLayout.css';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 
 function Layout(props) {
+  const [isAuthenticated, setIsAuthenticated] = useState(null); // Usar null para indicar "cargando"
+
+  useEffect(() => {
+    Auth()
+      .then((isAuthenticated) => {
+        setIsAuthenticated(isAuthenticated);
+      })
+      .catch((error) => {
+        console.log('Error en la solicitud:', error);
+        setIsAuthenticated(false);
+      });
+  }, []);
+
+
+
+
   return (
-    <div id="principal">
-      <Header id="barraMenu" Titulo={props.Titulo}/>
-      <div className="container">
-       {/* <Sidebar id="lateral" /> */}
-        <main id="main">{props.children}</main>
+    <div className="Layoutprincipal">
+      <div className="Layoutheader">
+        <Header id="barraMenu" Titulo={props.Titulo} />
       </div>
-      <Footer id="footer" />
+
+      <div className="Layoutcontainer">
+        {isAuthenticated ? (
+          <><div className="Layoutsidebar">
+            <Sidebar id="lateral" />
+          </div><main className="Layoutmain">{props.children}</main></>
+        ) : (
+          <>
+            
+            <main className="Layoutmain" style={{ width: '100%',height:'100%' }}>{props.children}</main>
+          </>
+        )}
+
+      </div>
+      <div className="Layoutfooter">
+        <Footer id="footer" />
+      </div>
+
     </div>
   );
 }

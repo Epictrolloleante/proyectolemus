@@ -1,4 +1,14 @@
-#principal {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #root {
+    height: 100%;
+  }
+
+.Layoutprincipal {
     display: flex;
     flex-direction: column;
     
@@ -6,33 +16,33 @@
     height: 100%;
 }
 
-Header{
+.Layoutheader{
     display: flex;
-    height: 15%;
+    height: 10%;
     width: 100%;
-}
+} 
 
-.container{
-    height: 70%;
+.Layoutcontainer{
+    height: 80%;
     width: 100%;
     display: flex;
 
 }
 
-#footer{
-    height: 14%;
+.Layoutfooter{
+    height: 10%;
     width: 100%;
 }
 
-#lateral{
+.Layoutsidebar{
     
-    width: 30%;
+    width: 20%;
     height: 100%;
     border: 1px solid black;
 }
 
-#main{
-    width: 100%;
+.Layoutmain{
+    width: 80%;
     height: 100%;
     padding: 1px;
     border: 1px solid black;

@@ -7,7 +7,8 @@ import ComponenteLogin from './pages/ComponenteLogin';
 import ComponenteRegistro from './pages/ComponenteRegistro';
 import ComponenteLogout from './pages/ComponenteLogout';
 import Logout from './pages/ComponenteLogout';
-
+import bootstrap from 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
   <BrowserRouter>

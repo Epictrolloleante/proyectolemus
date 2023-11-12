@@ -1,38 +1,5 @@
-.body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20;
-}
-.menu {
-    display: flex;
-    height: 80px;
-    background-color: #393d3f;
-    color: #FFFFFF;
-}
-.menu p{
-    width: 30%;
-	margin-left:20px;
-    margin-top: 0;
-    padding-top: 28px;
-}
-.opc-menu {
-    display: flex;
-    width: 70%;
-    justify-content: flex-end;
-}
-.opc-menu a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.opc-menu p{
-    text-align: center;
-    margin-left: 0px;
-    width: 80px;
-    height: 52px;
-}
-.opc-menu p:hover{
-    background-color: #62929E;
-}
-.contenedor{
+
+.Logincontenedor{
     display: flex;
     background-color: #62929E;
     width: 1046px;
@@ -42,31 +9,10 @@
     margin-top: 50px;
     border: 5px solid black;
     border-radius: 35px;
+    justify-content: center;
 }
-.google {
-    width: 49%;
-    height: 40%;
-    text-align: center;
-}
-.google p{
-    color: white;
-    -webkit-text-stroke: 2px black;
-	font-size:34px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-.google button{
-    width: 350px;
-    height: 50px;
-    background-color: white;
-    background-position: center center;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px black;
-    cursor: pointer;
-}
-.iniciar{
+
+.Logininiciar{
     width: 49%;
     height: 50%;
     margin: 40px;
@@ -75,29 +21,29 @@
     border-radius: 35px;
     box-shadow: 5px 5px 5px black;
 }
-.iniciar p{
+.Logininiciar p{
     color: white;
 	font-size:18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-.datosIniciar{
+.LogindatosIniciar{
     display: grid;
     text-align: end;
     place-content: center;
     grid-template-columns: 200px 200px;
 }
-.datosIniciar p{
+.LogindatosIniciar p{
     margin-right: 15px;
     margin-top: 25px;
 }
-.datosIniciar input{
+.LogindatosIniciar input{
     margin-top: 15px;
     border-radius: 15px;
     height: 30px;
     width: 150px;
 }
-.iniciar button{
+.Logininiciar button{
     margin-top: 15px;
     width: 163px;
     height: 62px;

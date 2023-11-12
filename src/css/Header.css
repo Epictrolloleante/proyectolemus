@@ -1,30 +1,43 @@
-.menu {
+.Headermenu {
     display: flex;
     background-color: #393d3f;
     color: #FFFFFF;
     width: 100%;
 }
-.menu p{
-    width: 30%;
+.Headermenu p {
+    width: 15%;
 	margin-left:20px;
     margin-top: 0;
     padding-top: 28px;
 }
-.opc-menu {
-    display: flex;
-    width: 70%;
-    justify-content: flex-end;
+.Headermenu button {
+    width: 100%
 }
-.opc-menu a{
+
+#HeaderDropdown{
+    width: 15%;
+    display: flex;
+}
+.Headeropc-menu {
+    display: flex;
+    width: 85%;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.Headeropc-menu div{
+    height: 100%;
+}
+.Headeropc-menu div a{
     text-decoration: none;
     color: #FFFFFF;
+    height: 100%;
 }
-.opc-menu p{
+.Headeropc-menu p{
     text-align: center;
     margin-left: 0px;
     width: 80px;
-    height: 52px;
 }
-.opc-menu p:hover{
+.Headeropc-menu p:hover{
     background-color: #62929E;
 }

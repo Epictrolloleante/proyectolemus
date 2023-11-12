@@ -8,7 +8,7 @@ const checkAuthorization = () => {
     return Promise.resolve(false);
   }
 
-  return fetch('http://serverreyes.ddns.net:8000/api/user-only', {
+  return fetch('http://serverreyes.ddns.net:8001/api/user-only', {
     method: 'GET',
     headers: {
       'Authorization': `Bearer ${token}`,
