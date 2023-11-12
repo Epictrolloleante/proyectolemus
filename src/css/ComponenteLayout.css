@@ -46,4 +46,7 @@ html, body {
     height: 100%;
     padding: 1px;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
