@@ -101,11 +101,11 @@ export default function ComponenteRegistro() {
 
     return (
         <ComponenteLayout Titulo='Registro'>
-            <div class='principal'>
-                <div class='contenedor'>
-                    <div class='registro'>
+            <div class='Registroprincipal'>
+                <div class='Registrocontenedor'>
+                    <div class='Registroregistro'>
                         <h3>REGISTRO</h3>
-                        <div class='info'>
+                        <div class='Registroinfo'>
                             <p>Nombre:</p> <input type='text' placeholder='Introduce tu nombre' value={nombre} onChange={handleNombreChange}></input> 
                             <p>Apellido Paterno:</p> <input type='text' placeholder='Introduce tu apellido paterno' value={apellidoP} onChange={handleApellidoPChange} ></input> 
                             <p>Apellido Materno:</p> <input type='text' placeholder='Introduce tu apellido materno' value={apellidoM} onChange={handleApellidoMChange} ></input> 
