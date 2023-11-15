@@ -7,6 +7,7 @@ import ComponenteLogin from './pages/ComponenteLogin';
 import ComponenteRegistro from './pages/ComponenteRegistro';
 import ComponenteLogout from './pages/ComponenteLogout';
 import Logout from './pages/ComponenteLogout';
+import Modulo1 from './pages/Modulo1';
 import bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <Route path="/MenuPrincipal" element={<MenuPrincipal />}>   </Route>
       <Route path="/" element={<MenuPrincipal />}>   </Route>
       <Route path="/logout" element={<Logout />}>   </Route>
-
+      <Route path="/modulo1" element={<Modulo1 />}>   </Route>
       
     </Routes>
   </BrowserRouter>
