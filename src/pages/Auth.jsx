@@ -14,12 +14,15 @@ const checkAuthorization = () => {
       'Authorization': `Bearer ${token}`,
     },
   })
-    .then((response) => response.text())
-    .then((text) => {
-      if (text === 'Autenticado') {
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.message === 'Autenticado') {
         console.log("Autenticación exitosa");
+        const fullName = `${data.user.name} ${data.user.apellidoP} ${data.user.apellidoM}`;
+        localStorage.setItem('nombre', fullName);
         return true;
       } else {
+        console.log(token);
         console.log("Autenticación fallida");
         return false;
       }
